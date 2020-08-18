@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 200px;
+    height: 50px;
+    max-width: 100%;
+}
+
+.sidenav {
+    margin-right: 30px;
+}
+
+.logol {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mainsidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background: rgb(236, 180, 49);
+    top: 0;
+    right: 0;
+    /* left:0 ; */
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.mainsidenav a {
+    display: block;
+    /* text-align:center; */
+    margin-left: 10px;
+    color: white;
+    padding: 20px;
+}
+
+/* company info section style start */
+
+.creativeagency {
+    width: 100%;
+    height: 37rem;
+    background-color: red;
+    background-image: linear-gradient(rgba(225, 226, 230, 0.9), rgba(225, 226, 230, 0.9)), url(img/companyinfo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.creativeagencyheading {
+    width: 70%;
+    height: 30rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    /* background-color: yellow; */
+    font-style: bold;
+}
+.creativeagencyheading a{
+    text-decoration: none;
+}
+
+.creativecolor {
+    color: rgb(236, 37, 37);
+}
+
+.agencycolor {
+    color: rgb(236, 133, 45);
+}
+
+.creativeagency h1 {
+    font-size: 5.55rem;
+}
+
+.creativeagency p {
+    padding: .55rem;
+    color: grey;
+    font-size: 1.40rem;
+}
+
+.creativeagency p span {
+    color: black;
+    font-size: 1.60rem;
+}
+
+.agencybuttons {
+    display: inline-block;
+    background-color: rgb(236, 31, 36);
+    color: white;
+    padding: 0.59rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.agencybuttons {
+    font-size: .1rem;
+    text-decoration:none ;
+}
+/* vartical div style */
+
+.label {
+    /* background: #f00; */
+    font-size: 28px;
+    padding: 4px 15px;
+}
+
+.top-right {
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+    transform: rotate(90deg) scaleX(-1);
+    transform-origin: top right;
+}
+
+.content {
+    transform: scaleX(-1);
+}
+
+.content p {
+    color: black;
+    font-size: .99rem;
+}
+
+.content i {
+    display: inline-block;
+    padding: 0.55rem;
+}
+
+.content i:hover {
+    font-size: 1.30rem;
+}
+
+/* company text info style start */
+
+.textinfo {
+    width: 100%;
+    height: 20rem;
+    /* background-color: red; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childtextbox {
+    width: 55%;
+    /* background-color: yellow; */
+    text-align: center;
+    margin-top: 1.55rem;
+}
+
+.childtextbox p {
+    font-size: 1rem;
+    color: grey;
+    padding: .60rem;
+}
+
+.childtextbox a {
+    font-size: 1rem;
+    color: grey;
+}
+
+.underlinetext:after {
+    content: "";
+    display: block;
+    width: 2%;
+    height: 1px;
+    margin: 3px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-left: 400px;
+    background: black;
+}
+
+.underlinetext:hover::after {
+    width: 12%;
+    height: 2px;
+    transition: width .3s;
+}
+
+/* our core offering section style start */
+
+.coreofferingheading {
+    text-align: center;
+    font-size: 2rem;
+    /* color: linear-gradient(to right, rgb(236, 42, 37) , rgb(236, 164, 48)); */
+    background: linear-gradient(rgb(236, 42, 37), rgb(236, 164, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+}
+
+.coreofferingpara {
+    text-align: center;
+    font-size: 1.30rem;
+    color: grey;
+    padding: 1rem;
+}
+
+.cards {
+    /* background-color: red; */
+    background-color: rgb(247, 251, 249);
+    width: 90%;
+    height: 41rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.samecartbox {
+    width: 35%;
+    height: 20rem;
+    /* background-color: indigo; */
+    text-align: center;
+}
+
+.samecartbox img {
+    width: 100px;
+    height: 80px;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.samecartbox .blacktexts {
+    color: black;
+    padding: .5rem;
+}
+
+.cartpara {
+    text-align: center;
+    color: grey;
+    padding: .50rem;
+}
+
+.verticallline {
+    position: absolute;
+    width: 1px;
+    height: 40rem;
+    background-color: rgb(200, 200, 200);
+}
+
+/* Our Capabilities style section start */
+
+/* .carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }  */
+
+/* fix blank or flashing items on carousel */
+
+/* .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  } */
+
+/* end fix */
+
+/* .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+  .item img{
+      width:60px!important;
+      height:90px;
+      max-width: 100%;
+     margin-left:4rem ;
+  }
+  .item p::before{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    margin: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 450px;
+    background:red;
+
+  }
+  .item p{
+      text-align: center;
+      color:grey;
+  } 
+ */
+
+/* clear style */
+
+.owl-slider {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #000;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+
+span {
+    font-size: 70px;
+    position: relative;
+    top: -5px;
+}
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+.item img {
+    width: 60px!important;
+    height: 90px;
+    max-width: 100%;
+    margin-left: 6rem;
+}
+
+.item p::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    margin: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 380px;
+    background: red;
+}
+
+.item p {
+    text-align: center;
+    color: grey;
+}
+
+.firstslider {
+    /* background-color: limegreen; */
+    height: 20rem;
+}
+
+/* view all service section  style start */
+
+.allservice {
+    width: 100%;
+    height: 11rem;
+    /* background-color: red; */
+    text-align: center;
+    padding: 1rem;
+}
+
+.allservice p {
+    font-size: 1.55rem;
+}
+
+.allservice a {
+    color: black;
+    text-decoration: none
+}
+
+.allservice p {
+    color: grey;
+}
+
+.underlinetextone :after {
+    content: "";
+    display: block;
+    width: 2%;
+    height: 1px;
+    margin: 3px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-left: 570px;
+    background: black;
+}
+
+.underlinetextone a:hover::after {
+    width: 12%;
+    height: 2px;
+    transition: width .3s;
+}
+
+.underlinetexttwo :after {
+    content: "";
+    display: block;
+    width: 2%;
+    height: 1px;
+    margin: 3px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-left: 880px;
+    background: black;
+}
+
+.underlinetexttwo a:hover::after {
+    width: 10%;
+    height: 2px;
+    transition: width .3s;
+}
+
+/* Startups & Brands Who Trust Us section style start */
+
+.startupsbrand {
+    text-align: center;
+    background-color: limegreen;
+}
+
+.startupsbrand h2 {
+    background: linear-gradient(rgb(236, 42, 37), rgb(236, 164, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+}
+
+.startupsbrand p {
+    font-size: 1.44rem;
+    color: grey;
+}
+
+.itemss img {
+    width: 150px!important;
+    height: 120px;
+    max-width: 100%;
+    margin-left: 4rem;
+}
+
+/* our client */
+
+.clientlist {
+    text-align: center;
+}
+
+.clientlist p {
+    font-size: 1.55rem;
+    color: grey;
+}
+
+.clientlist a {
+    text-decoration: none;
+    color: black;
+}
